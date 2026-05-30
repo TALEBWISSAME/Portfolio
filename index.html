@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Taleb Wissame</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#accueil" aria-label="Accueil Taleb Wissame">
+        <span class="brand-mark">T</span><span class="brand-name">Wissame</span>
+      </a>
+      <div class="nav-links">
+        <a href="#accueil" data-i18n="nav.home">Accueil</a>
+        <a href="#apropos" data-i18n="nav.about">&Agrave; propos</a>
+        <a href="#competences" data-i18n="nav.skills">Comp&eacute;tences</a>
+        <a href="#formation" data-i18n="nav.education">Formation</a>
+        <a href="#experiences" data-i18n="nav.experience">Exp&eacute;riences</a>
+        <a href="#projets" data-i18n="nav.projects">Projets</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Changer le theme">☾</button>
+        <button class="lang-button" id="lang-toggle" type="button" aria-label="Changer la langue">
+          <span class="lang-icon" aria-hidden="true">◎</span>
+          <span class="lang-label">FR</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-inner">
+        <img class="avatar" src="assets/home-profile.jpeg" alt="Portrait de Taleb Wissame" />
+        <p class="status" data-i18n="hero.status">Étudiante en informatique - à la recherche d'une alternance 💻 ✨</p>
+        <h1>Taleb Wissame</h1>
+        <p class="subtitle" data-i18n="hero.subtitle">D&eacute;veloppement / R&eacute;seaux / Data</p>
+
+        <div class="info-pills" aria-label="Informations principales">
+          <span><span class="pill-icon">⌖</span> Avignon</span>
+          <a href="tel:+33748383430"><span class="pill-icon">☎</span> +33 7 48 38 34 30</a>
+          <a href="mailto:taleb.wissame2004@gmail.com"><span class="pill-icon">✉</span> taleb.wissame2004@gmail.com</a>
+          <a href="https://github.com/TALEBWISSAME" target="_blank" rel="noreferrer"><span class="pill-icon">⌘</span> GitHub</a>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#projets">
+            <span class="button-icon">⌁</span>
+            <span data-i18n="hero.projects">Voir mes projets</span>
+          </a>
+          <a class="button primary" href="assets/CV_TALEB_WISSAME.pdf" download>
+            <span class="button-icon">⇩</span>
+            <span data-i18n="hero.cv">Télécharger mon CV</span>
+          </a>
+          <a class="button secondary" href="#contact">
+            <span class="button-icon">✉</span>
+            <span data-i18n="hero.contact">Me contacter</span>
+          </a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="section about-section">
+      <h2 data-i18n="about.title">&Agrave; propos</h2>
+      <div class="about-grid">
+        <div class="about-copy">
+          <h3 data-i18n="about.heading">Bonjour, je suis Taleb Wissame</h3>
+          <p>
+            <span data-i18n="about.p1">Étudiante en informatique à Avignon Université, je m'intéresse au développement web, au développement logiciel, aux réseaux informatiques et à l'analyse de données.</span>
+          </p>
+          <p>
+            <span data-i18n="about.p2">J'aime comprendre les besoins d'un projet, organiser les idées et construire des solutions concrètes. Chaque projet est pour moi une occasion d'apprendre, de progresser et de transformer une idée en outil utile. Je suis actuellement à la recherche d'une alternance afin de renforcer mes compétences techniques, développer mon expérience professionnelle et contribuer à des projets concrets au sein d'une équipe.</span>
+          </p>
+          <div class="about-highlights" aria-label="Points forts">
+            <span>Développement web</span>
+            <span>Réseaux</span>
+            <span>Analyse de données</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <img class="portrait-placeholder" src="assets/about-profile.jpeg" alt="Portrait de Taleb Wissame" />
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card">
+          <span class="stat-icon">◇</span>
+          <strong>4</strong>
+          <p>projets à présenter</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">⌂</span>
+          <strong>2</strong>
+          <p>diplômes : baccalauréat sciences et licence informatique</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">▣</span>
+          <strong>2026</strong>
+          <p>stage au CERI - Avignon Université</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">✦</span>
+          <strong>3</strong>
+          <p>années d'expérience étudiante et projets académiques</p>
+        </article>
+      </div>
+
+      <div class="profile-cards">
+        <article class="profile-card languages-card">
+          <h3>Langues</h3>
+          <div class="language-row">
+            <div>
+              <span>Arabe</span>
+              <small>Natif</small>
+            </div>
+            <div class="progress"><span style="width: 100%"></span></div>
+          </div>
+          <div class="language-row">
+            <div>
+              <span>Français</span>
+              <small>Courant</small>
+            </div>
+            <div class="progress"><span style="width: 92%"></span></div>
+          </div>
+          <div class="language-row">
+            <div>
+              <span>Anglais</span>
+              <small>Universitaire</small>
+            </div>
+            <div class="progress"><span style="width: 72%"></span></div>
+          </div>
+          <div class="language-row">
+            <div>
+              <span>Kabyle</span>
+              <small>Familier</small>
+            </div>
+            <div class="progress"><span style="width: 80%"></span></div>
+          </div>
+        </article>
+
+        <article class="profile-card soft-card">
+          <h3>Compétences personnelles</h3>
+          <div class="soft-item"><span>☷</span> Travail d'équipe</div>
+          <div class="soft-item"><span>↯</span> Autonomie</div>
+          <div class="soft-item"><span>✧</span> Organisation</div>
+          <div class="soft-item"><span>◎</span> Curiosité</div>
+        </article>
+
+        <article class="profile-card interests-card">
+          <h3>Centres d'intérêt</h3>
+          <div class="interest-item"><span>▣</span> Technologies et veille informatique</div>
+          <div class="interest-item"><span>⌘</span> Réseaux et systèmes</div>
+          <div class="interest-item"><span>◈</span> Analyse de données</div>
+          <div class="interest-item"><span>✦</span> Cuisine</div>
+          <div class="interest-item"><span>✈</span> Voyages et découvertes</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="competences" class="section">
+      <h2 data-i18n="skills.title">Comp&eacute;tences techniques</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>D&eacute;veloppement</h3>
+          <div class="tech-grid">
+            <div class="tech-item" data-level="70%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" /></span><p>Java</p></div>
+            <div class="tech-item" data-level="65%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /></span><p>Python</p></div>
+            <div class="tech-item" data-level="55%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" /></span><p>C/C++</p></div>
+            <div class="tech-item" data-level="70%"><span class="tech-logo algo">Σ</span><p>Algorithmique</p></div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <h3>Web</h3>
+          <div class="tech-grid">
+            <div class="tech-item" data-level="75%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="" /></span><p>HTML5</p></div>
+            <div class="tech-item" data-level="70%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="" /></span><p>CSS3</p></div>
+            <div class="tech-item" data-level="65%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="" /></span><p>JavaScript</p></div>
+            <div class="tech-item" data-level="65%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="" /></span><p>PHP</p></div>
+            <div class="tech-item" data-level="55%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" /></span><p>React</p></div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <h3>Bases de donn&eacute;es</h3>
+          <div class="tech-grid">
+            <div class="tech-item" data-level="70%"><span class="tech-logo sql">SQL</span><p>SQL</p></div>
+            <div class="tech-item" data-level="68%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="" /></span><p>MySQL</p></div>
+            <div class="tech-item" data-level="60%"><span class="tech-logo uml">UML</span><p>UML</p></div>
+            <div class="tech-item" data-level="58%"><span class="tech-logo merise">M</span><p>Merise</p></div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <h3>R&eacute;seaux</h3>
+          <div class="tech-grid">
+            <div class="tech-item" data-level="65%"><span class="tech-logo network">OSI</span><p>Mod&egrave;le OSI</p></div>
+            <div class="tech-item" data-level="62%"><span class="tech-logo tcp">IP</span><p>TCP/IP</p></div>
+            <div class="tech-item" data-level="60%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="" /></span><p>Linux</p></div>
+            <div class="tech-item" data-level="70%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" alt="" /></span><p>Windows</p></div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <h3>Outils</h3>
+          <div class="tech-grid">
+            <div class="tech-item" data-level="65%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="" /></span><p>Git</p></div>
+            <div class="tech-item" data-level="65%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" /></span><p>GitHub</p></div>
+            <div class="tech-item" data-level="50%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" /></span><p>Docker</p></div>
+            <div class="tech-item" data-level="75%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="" /></span><p>VS Code</p></div>
+            <div class="tech-item" data-level="65%"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" alt="" /></span><p>IntelliJ</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="formation" class="section">
+      <h2 data-i18n="education.title">Formation</h2>
+      <div class="education-timeline">
+        <article class="timeline-card">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5 12 4l10 4.5-10 4.5L2 8.5Z"/><path d="M6 11v4.5c0 1.7 2.7 3.1 6 3.1s6-1.4 6-3.1V11"/><path d="M22 9v6"/></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span>2025 – 2026</span>
+              <small>en cours</small>
+            </div>
+            <h3>Licence 3 Informatique</h3>
+            <p><span class="school-icon">▥</span> Université d'Avignon - CERI</p>
+          </div>
+        </article>
+        <article class="timeline-card">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5 12 4l10 4.5-10 4.5L2 8.5Z"/><path d="M6 11v4.5c0 1.7 2.7 3.1 6 3.1s6-1.4 6-3.1V11"/><path d="M22 9v6"/></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span>2024 – 2025</span>
+            </div>
+            <h3>Licence 2 Informatique</h3>
+            <p><span class="school-icon">▥</span> Université d'Avignon</p>
+          </div>
+        </article>
+        <article class="timeline-card">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5 12 4l10 4.5-10 4.5L2 8.5Z"/><path d="M6 11v4.5c0 1.7 2.7 3.1 6 3.1s6-1.4 6-3.1V11"/><path d="M22 9v6"/></svg>
+          </div>
+          <div>
+            <div class="timeline-meta">
+              <span>2023 – 2024</span>
+            </div>
+            <h3>Licence 1 Informatique</h3>
+            <p><span class="school-icon">▥</span> Université d'Avignon</p>
+          </div>
+        </article>
+        <article class="timeline-card">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5 12 4l10 4.5-10 4.5L2 8.5Z"/><path d="M6 11v4.5c0 1.7 2.7 3.1 6 3.1s6-1.4 6-3.1V11"/><path d="M22 9v6"/></svg>
+          </div>
+          <div>
+            <div class="timeline-meta">
+              <span>2022 – 2023</span>
+            </div>
+            <h3>Licence 1 Science</h3>
+            <p><span class="school-icon">▥</span> École Supérieure d'Enseignement et de Recherche Scientifique, Algérie</p>
+          </div>
+        </article>
+        <article class="timeline-card">
+          <div class="timeline-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5 12 4l10 4.5-10 4.5L2 8.5Z"/><path d="M6 11v4.5c0 1.7 2.7 3.1 6 3.1s6-1.4 6-3.1V11"/><path d="M22 9v6"/></svg>
+          </div>
+          <div>
+            <div class="timeline-meta">
+              <span>2021</span>
+              <small>Mention Très Bien</small>
+            </div>
+            <h3>Baccalauréat Sciences et Technologie</h3>
+            <p><span class="school-icon">▥</span> Baccalauréat scientifique et technologique</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiences" class="section">
+      <h2>Expériences</h2>
+      <div class="experience-list">
+        <article class="experience-card">
+          <div class="experience-year">
+            <span class="experience-icon">▣</span>
+            <strong>2026</strong>
+          </div>
+          <div class="experience-content">
+            <h3>Stage en gestion des données <span>(stage)</span></h3>
+            <h4>CERI - Avignon Université</h4>
+            <ul>
+              <li>Collecte et organisation de données textuelles.</li>
+              <li>Analyse et structuration des données à l'aide d'outils informatiques.</li>
+              <li>Classement de contenus et préparation de données exploitables.</li>
+              <li>Utilisation d'une démarche méthodique pour améliorer la qualité des informations.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-year">
+            <span class="experience-icon">▣</span>
+            <strong>2023 – 2026</strong>
+          </div>
+          <div class="experience-content">
+            <h3>Employée polyvalente <span>(job étudiant)</span></h3>
+            <h4>Restaurant fast-food</h4>
+            <ul>
+              <li>Travail en équipe dans un environnement dynamique.</li>
+              <li>Gestion des commandes et service à la clientèle.</li>
+              <li>Respect des normes d'hygiène et d'organisation.</li>
+              <li>Développement de l'autonomie, de la rigueur et du sens des responsabilités.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projets" class="section">
+      <h2 data-i18n="projects.title">Projets</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img class="project-image" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Tableau de bord et données" />
+          <h3>withu-backend</h3>
+          <p>Backend d'application construit avec Laravel, avec structure MVC, routes, base de données, tests et configuration moderne.</p>
+          <div class="tags">
+            <span>Laravel</span>
+            <span>PHP</span>
+            <span>Base de données</span>
+          </div>
+          <a class="project-link" href="https://github.com/TALEBWISSAME/withu-backend" target="_blank" rel="noreferrer">Voir sur GitHub</a>
+        </article>
+        <article class="project-card">
+          <img class="project-image" src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=900&q=80" alt="Documents et ordinateur portable" />
+          <h3>scrum-parser-pdf</h3>
+          <p>Projet Python pour analyser des documents PDF, extraire des informations et organiser les résultats dans des fichiers exploitables.</p>
+          <div class="tags">
+            <span>Python</span>
+            <span>PDF</span>
+            <span>Parsing</span>
+          </div>
+          <a class="project-link" href="https://github.com/TALEBWISSAME/scrum-parser-pdf" target="_blank" rel="noreferrer">Voir sur GitHub</a>
+        </article>
+        <article class="project-card">
+          <img class="project-image" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Travail numérique et données" />
+          <h3>nahuatl-corpus</h3>
+          <p>Projet de traitement de données linguistiques avec conversion de fichiers, structuration de corpus et scripts Python.</p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Données</span>
+            <span>Corpus</span>
+          </div>
+          <a class="project-link" href="https://github.com/TALEBWISSAME/nahuatl-corpus" target="_blank" rel="noreferrer">Voir sur GitHub</a>
+        </article>
+        <article class="project-card">
+          <img class="project-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Code sur ordinateur" />
+          <h3>PROJETBD</h3>
+          <p>Projet web avec base de données, configuration PHP, interface CSS et formulaire de contact avec insertion des données.</p>
+          <div class="tags">
+            <span>PHP</span>
+            <span>CSS</span>
+            <span>SQL</span>
+          </div>
+          <a class="project-link" href="https://github.com/TALEBWISSAME/PROJETBD" target="_blank" rel="noreferrer">Voir sur GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2 data-i18n="contact.title">Contactez-moi</h2>
+      <p data-i18n="contact.text">Vous avez une alternance ou un projet en tête ? N'hésitez pas à me contacter.</p>
+
+      <div class="contact-socials" aria-label="Liens de contact">
+        <a href="mailto:taleb.wissame2004@gmail.com" aria-label="Email">✉</a>
+        <a href="tel:+33748383430" aria-label="Téléphone">☎</a>
+        <a href="https://github.com/TALEBWISSAME" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+
+      <form class="contact-form" action="mailto:taleb.wissame2004@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" placeholder="Votre nom" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="votre@email.com" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message..."></textarea>
+
+        <button type="submit">Envoyer le message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><span id="year"></span> Taleb Wissame. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
