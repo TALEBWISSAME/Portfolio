@@ -1,8 +1,8 @@
 export const journey = [
-  { year: '2023', title: 'Début de la Licence Informatique', detail: 'Avignon Université — CERI' },
-  { year: '2024', title: 'Projets universitaires', detail: 'Algorithmique · POO · Web · Bases de données' },
-  { year: '2025', title: 'Projets logiciels et web avancés', detail: 'Développement d’applications et travail collaboratif' },
-  { year: '2026', title: 'Licence Informatique', detail: 'Avignon Université' },
-  { year: '2026', title: 'Admission en Master 1 ILSEN', detail: 'Software Engineering · Informatique' },
-  { year: '2026–2027', title: 'Recherche d’une alternance', detail: 'Développement logiciel · Web · Ingénierie informatique' },
+  { year: '2023', title: { fr: 'Début de la Licence Informatique', en: 'Started a Computer Science degree', ar: 'بداية ليسانس الإعلام الآلي' }, detail: { fr: 'Avignon Université — CERI', en: 'Avignon University — CERI', ar: 'جامعة أفينيون — CERI' } },
+  { year: '2024', title: { fr: 'Projets universitaires', en: 'University projects', ar: 'مشاريع جامعية' }, detail: { fr: 'Algorithmique · POO · Web · Bases de données', en: 'Algorithms · OOP · Web · Databases', ar: 'الخوارزميات · البرمجة الكائنية · الويب · قواعد البيانات' } },
+  { year: '2025', title: { fr: 'Projets logiciels et web avancés', en: 'Advanced software and web projects', ar: 'مشاريع متقدمة في البرمجيات والويب' }, detail: { fr: 'Développement d’applications et travail collaboratif', en: 'Application development and collaborative work', ar: 'تطوير التطبيقات والعمل التعاوني' } },
+  { year: '2026', title: { fr: 'Licence Informatique', en: 'Computer Science degree', ar: 'ليسانس إعلام آلي' }, detail: { fr: 'Avignon Université', en: 'Avignon University', ar: 'جامعة أفينيون' } },
+  { year: '2026', title: { fr: 'Admission en Master 1 ILSEN', en: 'Admitted to Master 1 ILSEN', ar: 'القبول في السنة الأولى ماستر ILSEN' }, detail: { fr: 'Génie logiciel · Informatique', en: 'Software Engineering · Computer Science', ar: 'هندسة البرمجيات · الإعلام الآلي' } },
+  { year: '2026–2027', title: { fr: 'Recherche d’une alternance', en: 'Seeking an apprenticeship', ar: 'البحث عن تكوين بالتناوب' }, detail: { fr: 'Développement logiciel · Web · Ingénierie informatique', en: 'Software · Web · Computer Engineering', ar: 'تطوير البرمجيات · الويب · هندسة الحاسوب' } },
 ]
