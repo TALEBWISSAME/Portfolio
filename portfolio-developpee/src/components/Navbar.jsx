@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Download, Menu, Moon, Sun, X } from 'lucide-react'
 import { useAppSettings } from '../context/AppSettingsContext'
+import TulipMark from './TulipMark'
 
 const links = [['work', 'work'], ['about', 'about'], ['skills', 'skills'], ['journey', 'journey'], ['contact', 'contact']]
 
@@ -19,7 +20,7 @@ export default function Navbar() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all ${scrolled ? 'border-b border-white/10 bg-ink/75 backdrop-blur-xl' : ''}`}>
       <div className="shell flex h-20 items-center justify-between">
-        <a href="#home" className="font-display text-xl font-bold tracking-tight">WISSAME<span className="text-accent">.</span></a>
+        <a href="#home" className="brand-lockup font-display text-xl font-bold tracking-tight">WISSAME<span className="text-accent">.</span><TulipMark /></a>
         <nav className="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Navigation principale">
           {links.map(([key, id]) => <a className="nav-link" key={id} href={`#${id}`}>{copy.nav[key]}</a>)}
           <div className="language-switch" aria-label="Choisir la langue">{['fr', 'en', 'ar'].map(item => <button className={language === item ? 'active' : ''} onClick={() => setLanguage(item)} key={item}>{item.toUpperCase()}</button>)}</div>
