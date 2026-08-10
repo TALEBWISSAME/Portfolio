@@ -24,7 +24,7 @@ export default function Skills() {
             <span className="font-mono text-xs tracking-[.2em] text-white/25">{String(index + 1).padStart(2, '0')}</span>
           </div>
           <div className="relative z-10 mt-14">
-            <h3 className="font-display text-3xl font-medium tracking-[-.04em]">{group.title}</h3>
+            <h3 className="skill-title font-display text-4xl font-medium tracking-[-.05em] sm:text-5xl">{group.title}</h3>
             <div className="mt-7 flex flex-wrap gap-2">{group.items.map(item => <span className="skill-pill" key={item}>{item}</span>)}</div>
           </div>
           <div className="skill-card-line" />

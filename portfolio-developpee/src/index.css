@@ -14,10 +14,10 @@
 @layer components {
   .shell { @apply mx-auto w-[min(1180px,calc(100%-2.5rem))]; }
   .section { @apply py-24 sm:py-32 lg:py-40; }
-  .kicker { @apply font-mono text-xs font-medium uppercase tracking-[.22em] text-accent; }
+  .kicker { @apply font-mono text-sm font-semibold uppercase tracking-[.24em] text-accent sm:text-base; }
   .section-heading { @apply mt-7 grid gap-6 lg:grid-cols-[1.2fr_.8fr] lg:items-end; }
-  .section-heading h2 { @apply font-display text-6xl font-medium leading-[.92] tracking-[-.06em] sm:text-8xl lg:text-9xl; }
-  .section-heading p { @apply max-w-xl text-base leading-7 text-muted sm:text-lg; }
+  .section-heading h2 { @apply font-display text-7xl font-medium leading-[.88] tracking-[-.07em] sm:text-8xl lg:text-[8.5rem]; }
+  .section-heading p { @apply max-w-xl text-lg leading-8 text-muted sm:text-xl; }
   .nav-link { @apply text-sm text-muted transition-colors hover:text-white; }
   .button { @apply inline-flex min-h-12 items-center gap-2 rounded-full border border-white/15 px-5 text-sm font-semibold transition duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/5; }
   .button-primary { @apply border-white bg-white text-ink hover:bg-white/90; }
@@ -39,6 +39,12 @@
 .bg-accent { background-color: #7167ff; }
 .border-accent { border-color: #7167ff; }
 .text-outline { color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.48); }
+.section-heading h2,.display-title,.project-title,.skill-title { color: transparent; background: linear-gradient(100deg,#fff 8%,#d7d5e5 40%,#8f87ff 52%,#fff 68%); background-size: 230% auto; background-position: 0 center; -webkit-background-clip: text; background-clip: text; filter: drop-shadow(0 9px 28px rgba(113,103,255,.08)); animation: title-shine 7s ease-in-out infinite; }
+.section-heading h2 { position: relative; padding-bottom: .12em; }
+.section-heading h2::after { content: ''; position: absolute; left: 0; bottom: 0; width: clamp(5rem,14vw,12rem); height: 3px; border-radius: 999px; background: linear-gradient(90deg,#7167ff,rgba(113,103,255,0)); box-shadow: 0 0 20px rgba(113,103,255,.55); transform-origin: left; animation: title-line 3.8s ease-in-out infinite; }
+.project-title { transition: filter .35s,transform .45s cubic-bezier(.16,1,.3,1); }
+article:hover .project-title { filter: drop-shadow(0 12px 35px rgba(113,103,255,.25)); transform: translateX(7px); }
+.skill-title { background-size: 260% auto; }
 .hero-grid { position: absolute; inset: 0; opacity: .13; background-image: linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px); background-size: 70px 70px; mask-image: linear-gradient(to bottom,black,transparent 85%); }
 .hero-glow { position: absolute; width: 44rem; height: 44rem; right: -18rem; top: 5rem; border-radius: 999px; background: #5f54fa; opacity: .13; filter: blur(110px); }
 .availability { display: inline-flex; align-items: center; gap: .65rem; border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: .55rem .9rem; color: #b4b4c0; font-size: .72rem; letter-spacing: .04em; }
@@ -78,6 +84,8 @@
 main,header { position: relative; z-index: 1; }
 
 @keyframes pulse { 50% { opacity: .55; transform: scale(.82); } }
+@keyframes title-shine { 0%,25%,100% { background-position: 0 center; } 60%,75% { background-position: 100% center; } }
+@keyframes title-line { 0%,100% { transform: scaleX(.32); opacity: .55; } 50% { transform: scaleX(1); opacity: 1; } }
 @keyframes orb-drift { from { transform: translate3d(-10px,-14px,0) scale(.96); } to { transform: translate3d(52px,46px,0) scale(1.08); } }
 @keyframes wave-flow { to { stroke-dashoffset: -210; } }
 @media (min-width: 1100px) { .about-layout { grid-template-columns: 22rem 1fr; align-items: start; } }

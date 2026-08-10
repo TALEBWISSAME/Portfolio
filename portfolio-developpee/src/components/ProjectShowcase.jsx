@@ -16,7 +16,7 @@ export default function ProjectShowcase({ project, index }) {
             <span className="font-mono text-sm text-accent">{String(index + 1).padStart(2, '0')}</span>
             {project.status && <span className="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs text-accent">{project.status}</span>}
           </div>
-          <h3 className="font-display text-5xl font-medium leading-[.95] tracking-[-.045em] sm:text-6xl lg:text-7xl">{project.name}</h3>
+          <h3 className="project-title font-display text-6xl font-medium leading-[.9] tracking-[-.055em] sm:text-7xl lg:text-8xl">{project.name}</h3>
           <p className="mt-6 max-w-xl text-base leading-8 text-muted sm:text-lg">{project.description}</p>
           <div className="mt-7 flex flex-wrap gap-2">{project.technologies.map(tech => <span className="tag" key={tech}>{tech}</span>)}</div>
           <div className="mt-9 flex flex-wrap gap-4">
