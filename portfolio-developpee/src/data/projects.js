@@ -1,9 +1,15 @@
 export const projects = [
   {
     name: 'WithYou',
-    description: 'Plateforme collaborative permettant de regarder du contenu vidéo de manière synchronisée, avec salons, authentification, chat et interactions en temps réel.',
+    description: 'Projet collaboratif de visionnage vidéo synchronisé. Contribution au backend, à la base de données, aux salons publics et privés, aux invitations et aux échanges en temps réel.',
     technologies: ['Laravel', 'React', 'TypeScript', 'PostgreSQL', 'WebSockets'],
-    github: 'https://github.com/TALEBWISSAME/Withyou',
+    github: 'https://github.com/malekghabi1607/WithYou',
+    githubLabel: 'Dépôt principal',
+    additionalLinks: [
+      { label: 'Mon fork', url: 'https://github.com/TALEBWISSAME/Withyou' },
+      { label: 'Backend', url: 'https://github.com/TALEBWISSAME/withu-backend' },
+    ],
+    status: 'Projet collaboratif',
     image: './projects/withyou.jpg',
   },
   {
@@ -21,13 +27,6 @@ export const projects = [
     image: './projects/staypilot.jpg',
   },
   {
-    name: 'withu-backend',
-    description: 'Dépôt backend Laravel associé à la plateforme WithYou et à ses fonctionnalités côté serveur.',
-    technologies: ['Laravel', 'PHP', 'Blade', 'JavaScript'],
-    github: 'https://github.com/TALEBWISSAME/withu-backend',
-    image: './projects/withu-backend.jpg',
-  },
-  {
     name: 'scrum-parser-pdf',
     description: 'Outil Python conçu pour analyser des documents PDF, extraire des informations et structurer les résultats dans des fichiers exploitables.',
     technologies: ['Python', 'PDF', 'Parsing', 'Données'],
@@ -39,14 +38,6 @@ export const projects = [
     description: 'Projet web avec base de données, interface PHP/CSS et formulaire de contact avec insertion des données.',
     technologies: ['PHP', 'CSS', 'Base de données'],
     github: 'https://github.com/TALEBWISSAME/PROJETBD',
-    image: './projects/database.jpg',
-  },
-  {
-    name: 'MonProjetBD',
-    description: 'Dépôt GitHub actuellement sans description ni contenu public documenté. Informations à compléter lorsque le projet sera disponible.',
-    technologies: ['À documenter'],
-    github: 'https://github.com/TALEBWISSAME/MonProjetBD',
-    status: 'À documenter',
     image: './projects/database.jpg',
   },
   {
@@ -64,5 +55,6 @@ export const projects = [
     github: 'https://github.com/TALEBWISSAME/Portfolio',
     image: './projects/portfolio.jpg',
     status: 'Nouvelle version',
+    live: './',
   },
 ]

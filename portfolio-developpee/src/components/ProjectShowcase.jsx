@@ -20,7 +20,8 @@ export default function ProjectShowcase({ project, index }) {
           <p className="mt-6 max-w-xl text-base leading-8 text-muted sm:text-lg">{project.description}</p>
           <div className="mt-7 flex flex-wrap gap-2">{project.technologies.map(tech => <span className="tag" key={tech}>{tech}</span>)}</div>
           <div className="mt-9 flex flex-wrap gap-4">
-            {project.github && <a className="text-link" href={project.github} target="_blank" rel="noreferrer"><Github size={18} /> GitHub <ExternalLink size={14} /></a>}
+            {project.github && <a className="text-link" href={project.github} target="_blank" rel="noreferrer"><Github size={18} /> {project.githubLabel || 'GitHub'} <ExternalLink size={14} /></a>}
+            {project.additionalLinks?.map(link => <a className="text-link" href={link.url} target="_blank" rel="noreferrer" key={link.url}><Github size={18} /> {link.label} <ExternalLink size={14} /></a>)}
             {project.live && <a className="text-link" href={project.live} target="_blank" rel="noreferrer">Voir le site <ExternalLink size={14} /></a>}
           </div>
         </div>
