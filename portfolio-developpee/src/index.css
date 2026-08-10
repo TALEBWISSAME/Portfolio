@@ -16,7 +16,7 @@
   .section { @apply py-24 sm:py-32 lg:py-40; }
   .kicker { @apply font-mono text-xs font-medium uppercase tracking-[.22em] text-accent; }
   .section-heading { @apply mt-7 grid gap-6 lg:grid-cols-[1.2fr_.8fr] lg:items-end; }
-  .section-heading h2 { @apply font-display text-5xl font-medium tracking-[-.05em] sm:text-7xl; }
+  .section-heading h2 { @apply font-display text-6xl font-medium leading-[.92] tracking-[-.06em] sm:text-8xl lg:text-9xl; }
   .section-heading p { @apply max-w-xl text-base leading-7 text-muted sm:text-lg; }
   .nav-link { @apply text-sm text-muted transition-colors hover:text-white; }
   .button { @apply inline-flex min-h-12 items-center gap-2 rounded-full border border-white/15 px-5 text-sm font-semibold transition duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/5; }
