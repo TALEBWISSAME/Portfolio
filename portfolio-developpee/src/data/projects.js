@@ -56,7 +56,7 @@ export const projects = [
     name: 'Portfolio développeuse — V2',
     description: { fr: 'Refonte complète de mon portfolio avec une direction artistique premium, une architecture React moderne et une expérience responsive.', en: 'Complete portfolio redesign with a premium visual direction, modern React architecture and responsive experience.', ar: 'إعادة تصميم كاملة لمعرض أعمالي بهوية بصرية احترافية وبنية React حديثة وتجربة متجاوبة.' },
     technologies: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
-    github: 'https://github.com/TALEBWISSAME/Portfolio',
+    github: 'https://github.com/TALEBWISSAME/portfolio-developpee',
     image: './projects/portfolio.jpg',
     status: { fr: 'Nouvelle version', en: 'New version', ar: 'نسخة جديدة' },
     live: './',
