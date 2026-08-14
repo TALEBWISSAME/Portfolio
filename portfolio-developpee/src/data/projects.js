@@ -17,6 +17,19 @@ export const projects = [
     image: './projects/withyou.jpg',
   },
   {
+    name: 'CutCount',
+    description: {
+      fr: 'Application web complète de gestion de salon de coiffure : prestations, rendez-vous, chiffre d’affaires, acomptes, pourboires, pointage et rapports PDF.',
+      en: 'Complete hair salon management web app featuring services, appointments, revenue tracking, deposits, tips, work shifts and PDF reports.',
+      ar: 'تطبيق ويب متكامل لإدارة صالون الحلاقة، يشمل الخدمات والمواعيد والإيرادات والعربون والإكراميات وساعات العمل وتقارير PDF.',
+    },
+    technologies: ['React', 'Supabase', 'PWA', 'JavaScript'],
+    github: 'https://github.com/TALEBWISSAME/cutcount',
+    live: 'https://cutcount.vercel.app',
+    status: { fr: 'Application en situation réelle', en: 'Real-world application', ar: 'تطبيق مستخدم فعلياً' },
+    image: './projects/cutcount.jpg',
+  },
+  {
     name: 'CeriCar',
     description: { fr: 'Application web de covoiturage avec recherche de trajets, gestion de profils, proposition de voyages et réservation de places.', en: 'Carpooling web application with route search, profile management, trip creation and seat booking.', ar: 'تطبيق ويب لمشاركة السيارات يشمل البحث عن الرحلات وإدارة الحسابات واقتراح الرحلات وحجز المقاعد.' },
     technologies: ['Yii2', 'PHP', 'PostgreSQL'],
