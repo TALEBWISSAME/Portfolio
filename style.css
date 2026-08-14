@@ -968,6 +968,19 @@ body.dark .interest-item {
   gap: 44px;
 }
 
+/* WithYou en premier, CutCount en deuxième, puis CeriCar. */
+.project-grid .project-card:nth-child(2) {
+  order: -3;
+}
+
+.project-grid .project-card:nth-child(3) {
+  order: -2;
+}
+
+.project-grid .project-card:nth-child(1) {
+  order: -1;
+}
+
 .project-card {
   min-height: 650px;
   display: flex;
